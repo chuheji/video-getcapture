@@ -1,6 +1,6 @@
 {
   "name": "video-getcapture",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "从视频文件中截取指定时间的帧，并生成图像",
   "main": "index.js",
   "directories": {
