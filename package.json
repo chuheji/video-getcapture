@@ -1,0 +1,27 @@
+{
+  "name": "video-getcapture",
+  "version": "1.0.0",
+  "description": "从视频文件中截取指定时间的帧，并生成图像",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chuheji/video-getcapture.git"
+  },
+  "keywords": [
+    "视频",
+    "帧数",
+    "图像生成"
+  ],
+  "author": "lyx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chuheji/video-getcapture/issues"
+  },
+  "homepage": "https://github.com/chuheji/video-getcapture#readme"
+}
