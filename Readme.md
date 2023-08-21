@@ -35,3 +35,40 @@ getCapture(videoFile, time, width)
     console.error('获取截图失败：', error);
   });
 ```
+
+vue简单示例
+
+```vue
+<template>
+  <input id="file" type="file">
+</template>
+
+<script>
+import { getCapture } from 'video-getcapture'
+export default {
+  async mounted() {
+    const input = document.querySelector('#file')
+    input.onchange = async (e) => {
+      const file = e.target.files[0]
+      for (let i = 0; i<=20; i++) {
+        const frame = await getCapture(file, i, 300)
+        const img = document.createElement('img')
+        img.src = frame.url
+        document.body.appendChild(img)
+      }
+    }
+    for (let i = 0; i<=20; i++) {
+      const frame = await getCapture(require('./1.mp4'), i, 200)
+      const img = document.createElement('img')
+      img.src = frame.url
+      document.body.appendChild(img)
+    }
+  }
+};
+</script>
+```
+
+## 注意
+
+1. 视频要求为同源视频
+2. 在vue中使用时要使用require
